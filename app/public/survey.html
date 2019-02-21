@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Time</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+        body {
+            background-image: url("https://wallpapercave.com/wp/Yuj5g8L.jpg");
+            background-repeat: repeat-y;
+            -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+           }
+           .jumbotron{
+        
+        font-family: 'Handlee', cursive;
+        background-image: linear-gradient( blue, rgb(255, 60, 0));
+       
+       }
+       .card{
+           color: black;
+       }
+.btn {
+  background-image: linear-gradient(rgb(255, 60, 0), blue);
+}
+.fas {
+  color:black;
+}
+hr{
+  color:rgb(255, 60, 0);
+}
+
+    
+           </style>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">
+
+                <span class="fas fa-poll"></span> Survey Time</h1>
+            <hr>
+            <h2 class="text-center">Answer these few questions to find your match</h2>
+            <br>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>About You</h2>
+                </div>
+                <div class="card-body">
+                    <form role="form">
+                        <div class="form-group">
+
+
+                            <label for="reserve-name">Name (Required)</label>
+                            <input type="text" id="name" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="reserve-phone">Photo (Required)</label>
+                            <input type="text" id="photo" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+
+                            <h2>Question 1</h2>
+                            <h4>When I go to sleep it must be completely dark?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionOne">
+                                <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 2</h2>
+                            <h4>I enjoy being alone?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionTwo">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 3</h2>
+                            <h4>A casual drink every now and then doesnt hurt?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionThree">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 4</h2>
+                            <h4>I find humor in everyday life?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionFour">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 5</h2>
+                            <h4>I like to explore the unknown?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionFive">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 6</h2>
+                            <h4>My favorite class in school was lunch?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionSix">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 7</h2>
+                            <h4>I love being around people all the time?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionSeven">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 8</h2>
+                            <h4>Music is the way I express myself?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionEight">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 9</h2>
+                            <h4>I believe everyone should take leaps of faith often?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionNine">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                 <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Question 10</h2>
+                            <h4>Ice cream is the perfect breakfast food?</h4>
+                            <label for="exampleFormControlSelect1"></label>
+                            <br>
+                            <select class="form-group col-md-3" id="questionTen">
+                                    <option>Select Choice</option>
+                                <option>1 (strongly disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree)</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit" data-toggle="modal"data-target="#exampleModalLong">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    Launch demo modal
+                  </button> -->
+
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Your Perfect match is</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" id ="match-name"></div>
+                         <div class="modal-body"><img 
+                         id = "match-photo"height="200px" width="200px"
+                         src= "">
+                         </div>
+                        <!-- <div class="modal-body" img scr = "" id = "match-photo">
+                         
+    
+                            </div> -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer">
+                <div class="container">
+                    <!-- change the links to the list and repos  -->
+                    <p><a href="/api/friends" id="clear">API Friends List</a> | <a href="/api/tablesdata">Git Hub Repo</a></p>
+                </div>
+            </footer>
+
+        </div>
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+console.log()
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [parseInt($("#questionOne").val()[0]), parseInt($("#questionTwo").val()[0]), parseInt($("#questionThree").val()[0]), parseInt($("#questionFour").val()[0]),
+                 parseInt($("#questionFive").val()[0]), parseInt($("#questionSix").val()), parseInt($("#questionSeven").val()[0]),
+                parseInt($("#questionEight").val()[0]), parseInt($("#questionNine").val()[0]), parseInt($("#questionTen").val()[0])
+            ]
+
+        };
+
+        console.log(newFriend);
+
+        $.post("/api/friends", newFriend)
+            .then(function (data) {
+                console.log(data);
+//                 $('#myModal').on('shown.bs.modal', function () {
+//   $('#submit').trigger('focus')
+// alert("your best match is " + data.name + data.photo);
+
+                $("#match-name").text(data.name);
+                $("#match-photo").attr("src", data.photo);
+                $("result")
+                
+                // $("#match-photo").empty().append(data.photo);
+
+            // results-modal;
+            // $(".modal").modal("toggle");
+
+            });
+        // window.location.href = "/api/friends";
+
+    });
+    
+   
+    // $.post("/api/friends", newFriend,
+    //     function (data) {
+
+    //         // If a table is available... tell user they are booked.
+    //         if (data) {
+    //             alert("Yay! You are officially matched");
+    //         }
+
+    //         // If a table is available... tell user they on the waiting list.
+    //         else {
+    //             alert("Sorry you are on the wait list");
+    //         }
+
+    //         // Clear the form when submitting
+
+    //         $("#questionOne").val("");
+    //         $("#questionTwo").val("");
+    //         $("#questionThree").val("");
+    //         $("#questionFour").val("");
+    //         $("#questionFive").val("");
+    //         $("#questionSix").val("");
+    //         $("#questionSeven").val("");
+    //         $("#questionEight").val("");
+    //         $("#questionNine").val("");
+    //         $("#questionTen").val("");
+
+    //     });
+
+
+
+</script>
+</body>
+
+</html>

@@ -12,3 +12,6 @@ Each answer should be on a scale of 1 to 5 based on how much the user agrees or 
 
 After you answer all the questions your results will just pop up and show you who your friend match is.
 
+
+https://naomimae.github.io/New-Friend-Finder/app/public/home.html
+
